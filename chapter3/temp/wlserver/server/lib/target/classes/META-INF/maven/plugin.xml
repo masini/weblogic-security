@@ -1,0 +1,11 @@
+<plugin>
+  <description></description>
+  <groupId>com.oracle.weblogic</groupId>
+  <artifactId>wls-maven-plugin</artifactId>
+  <version>12.1.1.0</version>
+  <goalPrefix>wls</goalPrefix>
+  <isolatedRealm>false</isolatedRealm>
+  <inheritedByDefault>true</inheritedByDefault>
+  <mojos/>
+  <dependencies/>
+</plugin>

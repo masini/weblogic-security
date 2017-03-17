@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
+
+    <security-role-assignment>
+        <role-name>my-user</role-name>
+        <principal-name>users</principal-name>
+    </security-role-assignment>
+    <!--
+    <wls:security-role-assignment>
+        <wls:role-name>my-anonymous</wls:role-name>
+        <wls:principal-name>everyone</wls:principal-name>
+    </wls:security-role-assignment>
+
+    <wls:fast-swap>
+        <wls:enabled>false</wls:enabled>
+    </wls:fast-swap>
+-->
+</weblogic-web-app>

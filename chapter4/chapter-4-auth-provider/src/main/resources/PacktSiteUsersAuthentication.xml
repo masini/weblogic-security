@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE MBeanType SYSTEM "commo.dtd">
+
+<MBeanType
+Name = "PacktSiteUsersAuthentication"
+DisplayName = "PacktSiteUsersAuthentication"
+Package = "net.lucamasini.security"
+Extends = "weblogic.management.security.authentication.Authenticator"
+PersistPolicy = "OnUpdate"
+>
+<!--
+    Sembra inutile
+    Preprocessor = "weblogic.management.configuration.LegalHelper.checkClassName(value)"
+-->
+    <MBeanAttribute
+    Name = "ProviderClassName"
+    Type = "java.lang.String"
+    Writeable = "false"
+    Default = "&quot;net.lucamasini.security.PacktAuthProviderImpl&quot;"
+    />
+
+    <MBeanAttribute
+    Name = "Description"
+    Type = "java.lang.String"
+    Writeable = "false"
+    Default = "&quot;WebLogic Packt Authentication Provider&quot;"
+    />
+
+    <MBeanAttribute
+    Name = "Version"
+    Type = "java.lang.String"
+    Writeable = "false"
+    Default = "&quot;1.0&quot;"
+    />
+
+    <MBeanAttribute
+    Name = "URL"
+    Type = "java.lang.String"
+    Writeable = "true"
+    Default = "&quot;${authentication.services.url}&quot;"
+    />
+</MBeanType>

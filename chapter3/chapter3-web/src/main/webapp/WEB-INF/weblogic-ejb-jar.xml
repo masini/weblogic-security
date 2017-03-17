@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-ejb-jar xmlns="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar">
+<!--
+    <security-role-assignment>
+        <role-name>my-special-user</role-name>
+        <principal-name>everyone</principal-name>
+    </security-role-assignment>
+    -->
+    <run-as-role-assignment>
+        <role-name>my-special-user</role-name>
+        <run-as-principal-name>weblogic</run-as-principal-name>
+    </run-as-role-assignment>
+</weblogic-ejb-jar>
